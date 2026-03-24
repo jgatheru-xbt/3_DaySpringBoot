@@ -8,6 +8,16 @@ import org.springframework.stereotype.Component;
 public class AppProperties {
     private String message;
 
+    private Boolean paymentEnabled = true;
+    private Boolean hmacStatus = true;
+
+    private String maxAttempts;
+    private String delay;
+    private String multiplier;
+
+
+    private String apiKey;
+
     public String getMessage() {
         return message;
     }
@@ -15,4 +25,6 @@ public class AppProperties {
     public void setMessage(String message) {
         this.message = message;
     }
+
+
 }
